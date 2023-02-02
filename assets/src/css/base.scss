@@ -1,0 +1,153 @@
+$title-padding: 3px;
+
+html {
+    overflow-x: hidden;
+}
+
+.title {
+    padding: $title-padding;
+}
+
+#toc {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nomobile {
+    display: none;
+}
+
+.chapter-button {
+    height: 100% !important;
+    font-size: 15px;
+    margin-bottom: 15px !important;
+    display: inline-block; 
+    width: 100%; 
+    text-align: left !important;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.grade-btn {
+    height: 60px !important; 
+    font-size: 20px; 
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    #toc {
+        width: 70%;
+    }
+
+    .nomobile {
+        display: block;
+    }
+
+    .ic-content {
+        padding: 3px;
+    }
+
+    .chapter-button {
+        font-size: 20px;
+        height: 60px !important;
+        word-break: default;
+        margin-bottom: 0px !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    .grade-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grade-btn {
+        flex-basis: 30%;
+        margin: 0 auto;
+        padding: 0;
+        display: grid;
+    }
+}
+
+.subject-desc {
+    display: block;
+    width: 100%;
+    text-align: left !important;
+}
+
+.card-header.collapsed::after {
+    display: none;
+}
+
+.card-header::after {
+    display: none !important;
+}
+
+.card, .card-header {
+    border-radius: 5px 5px 5px 5px !important;
+}
+
+.card, .card-header, .card-body {
+    word-wrap: break-word;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.index-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+#our-vision {
+    background-color:#c3c7c4;
+    width: 100%;
+    min-height: 50vh;
+    padding: 5px;
+}
+
+#our-vision-header {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.video-item {
+    font-size: 18px;
+    vertical-align: top;
+    display: inline-block;
+    margin: 10px;
+    width: 170px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.video-title {
+    white-space: normal;
+    padding-top: 2px;
+}
+
+.video-container {
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space:nowrap;
+    line-height: 13px;
+    margin-top: 5px;
+}
+
+.col-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.col {
+    margin-bottom: 30px;
+}
+
+.center-flex {
+    display: flex;
+}

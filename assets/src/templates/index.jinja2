@@ -1,0 +1,40 @@
+{% extends "_base.jinja2" %}
+
+{% block head %}
+<script defer>
+  $(document).ready(getToc)
+</script>
+{% endblock %}
+
+{% block title %}
+  <title>Shiksha360</title>
+{% endblock %}
+
+{% block header %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+  <div class="index-container">
+    <div id="what-we-are" class="nomobile">
+      <div class="row">
+        <div class="col">
+          <h5 class="col-title">Animations</h5>
+        </div>
+        <div class="col">
+          <h5 class="col-title">Lectures</h5>
+        </div>
+        <div class="col">
+          <h5 class="col-title">Experiments</h5>
+        </div>
+        <div class="col">
+          <h5 class="col-title">Applications</h5>
+        </div>
+      </div>
+    </div>
+    {{ super() }}
+    <div class="row justify-content-center">
+      <button class="btn btn-outline-primary text-center" style="margin-top: 10px;" onclick="modalShow('Our Vision', ourVision)">Our Vision</button>
+    </div>
+  </div>
+{% endblock %}
